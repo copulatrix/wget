@@ -1,0 +1,38 @@
+{
+  "name": "@copulatrix/wget",
+  "version": "1.0.0",
+  "description": "A simple wget-like package to download files. With support for Socks5 proxies.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/copulatrix/wget.git"
+  },
+  "keywords": [
+    "download",
+    "http",
+    "https",
+    "proxy",
+    "wget",
+    "tor",
+    "socks",
+    "socks5",
+    "tunnel"
+  ],
+  "author": "Copulatrix <maher.chris@outlook.com>",
+  "contributors": [
+    {
+      "name": "Chris Maher",
+      "email": "maher.chris@outlook.com",
+      "url": "https://github.com/copulatrix"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/copulatrix/wget/issues"
+  },
+  "homepage": "https://github.com/copulatrix/wget#readme",
+  "dependencies": {
+    "socks-proxy-agent": "^7.0.0"
+  }
+}
