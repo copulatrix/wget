@@ -1,6 +1,6 @@
 {
   "name": "@copulatrix/wget",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple wget-like package to download files. With support for Socks5 proxies.",
   "main": "index.js",
   "scripts": {},
