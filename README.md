@@ -7,7 +7,7 @@ With built in support for Socks5 proxies, allowing to download files from [Tor](
 Inspired by [bearjaws/node-wget](https://github.com/bearjaws/node-wget)
 
 ## Features
-- [X] Socks5 Proxy Support
+- [X] Socks Proxy Support
 
 ## Todo
 - [ ] HTTP/HTTPS Proxy Support
@@ -24,7 +24,7 @@ Inspired by [bearjaws/node-wget](https://github.com/bearjaws/node-wget)
 var wget = require('@copulatrix/wget');
 
 var download = wget.wget('http://ftp.iinet.net.au/pub/test/5meg.test1', '5meg.test', {
-    proxy: 'socks5://127.0.0.1:9050/' // optional
+    proxy: 'socks://127.0.0.1:9050/' // optional
 });
 
 download.on('error', (error) => {
@@ -72,7 +72,7 @@ download.on('complete', (filesize) => {
     console.log(filesize);
 });
 
-request.wget();
+download.wget();
 ```
 
 
@@ -81,7 +81,7 @@ request.wget();
 var wget = require('@copulatrix/wget');
 
 var request = wget.request('http://ftp.iinet.net.au/pub/test/5meg.test1', {
-    proxy: 'socks5://127.0.0.1:9050/' // optional
+    proxy: 'socks://127.0.0.1:9050/' // optional
 });
 
 request.on('error', (error) => {
